@@ -3,14 +3,12 @@ public class Artist {
     private String genre;
     private int totalAlbums;
 
-    // Constructor
     public Artist(String name, String genre, int totalAlbums) {
         this.name = name;
         this.genre = genre;
         this.totalAlbums = totalAlbums;
     }
 
-    // Getters
     public String getName() {
         return name;
     }
@@ -23,7 +21,7 @@ public class Artist {
         return totalAlbums;
     }
 
-    // Setters
+
     public void setName(String name) {
         this.name = name;
     }
@@ -36,7 +34,6 @@ public class Artist {
         this.totalAlbums = totalAlbums;
     }
 
-    // ToString method for output
     @Override
     public String toString() {
         return "Artist: " + name + ", Genre: " + genre + ", Total Albums: " + totalAlbums;

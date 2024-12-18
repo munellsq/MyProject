@@ -3,14 +3,12 @@ public class Song {
     private String artist;
     private double duration;
 
-    // Конструктор
     public Song(String title, String artist, double duration) {
         this.title = title;
         this.artist = artist;
         this.duration = duration;
     }
 
-    // Геттеры и сеттеры
     public String getTitle() {
         return title;
     }
@@ -35,7 +33,6 @@ public class Song {
         this.duration = duration;
     }
 
-    // Метод для вывода информации о песне
     public void displayInfo() {
         System.out.println("Song: " + title + ", Artist: " + artist + ", Duration: " + duration + " mins");
     }
