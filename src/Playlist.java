@@ -25,10 +25,6 @@ public class Playlist {
         songs.remove(song);
     }
 
-    public ArrayList<Song> getSongs() {
-        return songs;
-    }
-
     @Override
     public String toString() {
         StringBuilder playlistInfo = new StringBuilder("Playlist: " + title + "\nSongs:\n");

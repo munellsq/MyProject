@@ -33,7 +33,9 @@ public class Song {
         this.duration = duration;
     }
 
-    public void displayInfo() {
-        System.out.println("Song: " + title + ", Artist: " + artist + ", Duration: " + duration + " mins");
+
+    @Override
+    public String toString() {
+        return title + " by " + artist + " (" + duration + " mins)";
     }
 }
