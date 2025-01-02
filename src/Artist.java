@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Artist {
     private String name;
     private String genre;
@@ -13,25 +15,37 @@ public class Artist {
         return name;
     }
 
-    public String getGenre() {
-        return genre;
-    }
-
-    public int getTotalAlbums() {
-        return totalAlbums;
-    }
-
-
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getGenre() {
+        return genre;
     }
 
     public void setGenre(String genre) {
         this.genre = genre;
     }
 
+    public int getTotalAlbums() {
+        return totalAlbums;
+    }
+
     public void setTotalAlbums(int totalAlbums) {
         this.totalAlbums = totalAlbums;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Artist artist = (Artist) obj;
+        return name.equals(artist.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
     }
 
     @Override

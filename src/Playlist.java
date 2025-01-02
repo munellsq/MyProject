@@ -1,20 +1,12 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 
-public class Playlist {
-    private String title;
+public class Playlist extends MediaItem {
     private ArrayList<Song> songs;
 
     public Playlist(String title) {
-        this.title = title;
+        super(title);
         this.songs = new ArrayList<>();
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
     }
 
     public void addSong(Song song) {
@@ -25,9 +17,32 @@ public class Playlist {
         songs.remove(song);
     }
 
+    public ArrayList<Song> filterSongsByArtist(String artistName) {
+        ArrayList<Song> filtered = new ArrayList<>();
+        for (Song song : songs) {
+            if (song.getArtist().equalsIgnoreCase(artistName)) {
+                filtered.add(song);
+            }
+        }
+        return filtered;
+    }
+
+    public Song findSongByTitle(String title) {
+        for (Song song : songs) {
+            if (song.getTitle().equalsIgnoreCase(title)) {
+                return song;
+            }
+        }
+        return null;
+    }
+
+    public void sortSongsByDuration() {
+        songs.sort(Comparator.comparingDouble(Song::getDuration));
+    }
+
     @Override
     public String toString() {
-        StringBuilder playlistInfo = new StringBuilder("Playlist: " + title + "\nSongs:\n");
+        StringBuilder playlistInfo = new StringBuilder("Playlist: " + getTitle() + "\nSongs:\n");
         for (Song song : songs) {
             playlistInfo.append(song).append("\n");
         }
