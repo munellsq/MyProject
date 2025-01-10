@@ -36,8 +36,8 @@ public class Playlist extends MediaItem {
         return null;
     }
 
-    public void sortSongsByDuration() {
-        songs.sort(Comparator.comparingDouble(Song::getDuration));
+    public void sortSongsByListeners() {
+        songs.sort(Comparator.comparingInt(Song::getListenersPM).reversed());
     }
 
     @Override

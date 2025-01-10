@@ -53,3 +53,4 @@ public class Artist {
         return "Artist: " + name + ", Genre: " + genre + ", Total Albums: " + totalAlbums;
     }
 }
+

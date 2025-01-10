@@ -2,12 +2,12 @@ import java.util.Objects;
 
 public class Song extends MediaItem {
     private String artist;
-    private double duration;
+    private int listenersPM;
 
-    public Song(String title, String artist, double duration) {
+    public Song(String title, String artist, int listenersPM) {
         super(title);
         this.artist = artist;
-        this.duration = duration;
+        this.listenersPM = listenersPM;
     }
 
     public String getArtist() {
@@ -18,12 +18,12 @@ public class Song extends MediaItem {
         this.artist = artist;
     }
 
-    public double getDuration() {
-        return duration;
+    public int getListenersPM() {
+        return listenersPM;
     }
 
-    public void setDuration(double duration) {
-        this.duration = duration;
+    public void setListenersPM(int listenersPM) {
+        this.listenersPM = listenersPM;
     }
 
     @Override
@@ -41,6 +41,6 @@ public class Song extends MediaItem {
 
     @Override
     public String toString() {
-        return getTitle() + " by " + artist + " (" + duration + " mins)";
+        return getTitle() + " by " + artist + " (" + listenersPM + " listeners/month)";
     }
 }
