@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f69f7a8-19f7-4234-9bca-7484ad3499ac" name="Changes" comment="final update">
+      <change afterPath="$PROJECT_DIR$/src/DatabaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SongDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/As1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/As1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Artist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/As1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/As1/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Song.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,16 +39,21 @@
   &quot;keyToString&quot;: {
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.Song.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestDatabaseConnection.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Downloads/postgresql-42.7.5.jar&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/user/IdeaProjects/As1/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -97,7 +103,14 @@
       <workItem from="1734751133196" duration="3000" />
       <workItem from="1735630506508" duration="2294000" />
       <workItem from="1735832690732" duration="1745000" />
-      <workItem from="1736485200033" duration="1794000" />
+      <workItem from="1736485200033" duration="6522000" />
+      <workItem from="1737087762635" duration="809000" />
+      <workItem from="1737090680567" duration="1763000" />
+      <workItem from="1737224216737" duration="2000" />
+      <workItem from="1737367013213" duration="6007000" />
+      <workItem from="1737446422903" duration="3097000" />
+      <workItem from="1737522755522" duration="1229000" />
+      <workItem from="1737539621339" duration="2219000" />
     </task>
     <task id="LOCAL-00001" summary="final update">
       <option name="closed" value="true" />

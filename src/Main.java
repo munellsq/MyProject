@@ -1,28 +1,21 @@
 public class Main {
     public static void main(String[] args) {
-        Song song1 = new Song("Imagine", "John Lennon", 1000000);
-        Song song2 = new Song("Bohemian Rhapsody", "Queen", 5000000);
-        Artist artist1 = new Artist("John Lennon", "pop", 3);
-        Artist artist2 = new Artist("Queen", "rock", 2);
+        SongDAO songDAO = new SongDAO();
 
-        Playlist playlist = new Playlist("My Playlist");
-        playlist.addSong(song1);
-        playlist.addSong(song2);
+        // Добавление песен
+        songDAO.addSong("Imagine", "John Lennon", 5000000);
+        songDAO.addSong("Bohemian Rhapsody", "Queen", 7000000);
 
-        System.out.println(playlist);
+        // Чтение всех песен
+        songDAO.readSongs();
 
-        if (song1.getListenersPM() > song2.getListenersPM()) {
-            System.out.println(song1.getTitle() + " has more listeners than " + song2.getTitle());
-        } else {
-            System.out.println(song2.getTitle() + " has more listeners than " + song1.getTitle());
-        }
+        // Обновление названия песни
+        songDAO.updateSong(1, "Imagine - Remastered");
 
-        playlist.filterSongsByArtist("Queen").forEach(System.out::println);
+        // Удаление песни
+        songDAO.deleteSong(2);
 
-        Song foundSong = playlist.findSongByTitle("Imagine");
-        System.out.println(foundSong != null ? "Found: " + foundSong : "Song not found");
-
-        playlist.sortSongsByListeners();
-        System.out.println("\nSorted Playlist:\n" + playlist);
+        // Чтение всех песен после изменений
+        songDAO.readSongs();
     }
 }
